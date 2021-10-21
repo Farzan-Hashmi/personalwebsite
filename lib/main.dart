@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget{
                       IconButton(
                         icon: Image.asset('images/resume.png'),
                         onPressed: () {openresume();},
-                        iconSize: 11,
+                        iconSize: 30,
                       ),
 
                     ]
