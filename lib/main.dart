@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
                       onPressed: () {
                         openresume();
                       },
-                      iconSize: 21,
+                      iconSize: 30,
                     ),
                   ]),
             ]),
