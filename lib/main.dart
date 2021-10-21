@@ -162,7 +162,7 @@ class SecondScreen extends StatelessWidget {
                         },
                         child: Text(
                           '- 10/20/21: Thoughts on Flutter',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.lightBlue),
                         ),
                       )
                     ])),
@@ -195,7 +195,7 @@ class Blog1 extends StatelessWidget{
                     builder: (context) => MyApp()),
                 );
               },
-              child: Text('go home', style: TextStyle(color: Colors.white),),
+              child: Text('go home', style: TextStyle(color: Colors.lightBlue, fontWeight: FontWeight.bold),),
             )
 
           ],
