@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -95,7 +96,7 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(0.0),
         alignment: Alignment.center,
       ),
-    );
+    ) ;
   }
 
   openlinkedin() {
@@ -157,7 +158,7 @@ class SecondScreen extends StatelessWidget {
                           Navigator.push(
                               context,
                               new MaterialPageRoute(
-                                  builder: (context) => MyApp()));
+                                  builder: (context) => Blog1()));
                         },
                         child: Text(
                           '- 10/20/21: Thoughts on Flutter',
@@ -167,5 +168,39 @@ class SecondScreen extends StatelessWidget {
                     ])),
           ],
         ));
+  }
+}
+
+
+class Blog1 extends StatelessWidget{
+  @override
+  final controller = PageController(initialPage: 1);
+  Widget build(BuildContext context) {
+    return Scaffold(
+        backgroundColor: Colors.black,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.center, 
+          children: <Widget> [
+            SizedBox(height: 50),
+            Text("- 10/20/21: Thoughts on Flutter:", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'Roboto'),),
+            SizedBox(height: 30),
+            Text("So I used flutter and dart to build this website completely and its been alright imo. Tbh the main reason why I chose flutter was because I thought other web frameworks involving JS were too hard to learn quickly. I pretty much learned flutter through building this website in the past 2 days. My favorite thing so far has been the lack of CSS and HTML. That being said I think flutter still has a little bit to go before it can be used in production ready WebDev. For example, if you notice, scrolling through these pages on a PC is far more jittery than on mobile, and there really isn't a way I can fix this easily. The 'everything is a widget' aspect of Flutter can seem messy and wierd at first, but its not that bad as soon as you start programming a bit more.  ", style: TextStyle(fontFamily: 'Roboto', color: Colors.white, fontWeight: FontWeight.w100, height: 1.8),),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => MyApp()),
+                );
+              },
+              child: Text('go home', style: TextStyle(color: Colors.white),),
+            )
+
+          ],
+        ),
+      
+      );
   }
 }
