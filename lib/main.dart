@@ -148,7 +148,7 @@ class SecondScreen extends StatelessWidget {
                       ),
                     ])),
             SizedBox(
-                height: 30,
+                height: 40,
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
